@@ -2,10 +2,16 @@
 {
     public class NumberService : INumberService
     {
+        private readonly int _number;
 
-        public Guid GetNumber()
+        public NumberService()
         {
-            return Guid.NewGuid();
+            _number = Random.Shared.Next(1, 100);
+        }
+
+        public int GetNumber()
+        {
+            return _number;
         }
 
         

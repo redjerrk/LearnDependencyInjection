@@ -2,6 +2,6 @@
 {
     public interface INumberService
     {
-        Guid GetNumber();
+        int GetNumber();
     }
 }

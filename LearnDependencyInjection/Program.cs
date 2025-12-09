@@ -9,7 +9,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddSingleton<INumberService, NumberService>();
+builder.Services.AddScoped<INumberService, NumberService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
